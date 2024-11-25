@@ -1,0 +1,117 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffe4c4;
+    background-color: #beae96;
+}
+
+@font-face {
+    font-family: god;
+    src: url(GODOFWAR.TTF);
+}
+
+h1 {
+    font-family: god;
+}
+
+#calculadora {
+    max-width: 360px;
+    background-color: #ffffff15;
+    backdrop-filter: blur(5.5px);
+    box-shadow: 0 8px 30px #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+.videofundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.videofundo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#display {
+    font-size: 22px;
+    text-align: right;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    color: chartreuse;
+    background-color: #0cf3e7c0;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff55;
+    color: bisque;
+    float: left;
+}
+
+.operador {
+    background-color: #0cf3e7;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #00ff558f;
+    box-shadow: 0 0 5px #0cf3e7;
+    transform: scale(0.9);
+}
+
+footer {
+   background-image: linear-gradient(to right, #00ff55, #00ffbf);
+}
+
+.mudar {
+   background-image: linear-gradient(to right, #00ff55, #00ffbf);
+   margin-top: 3em;
+}
+
+/* ---------------------------------------------------------- */
+
+/* MODO DARK */
+
+.modo-escuro #calculadora {
+    background-color: #0000003d;
+}
+
+.modo-escuro #display {
+    background-color: #00ff55;
+}
+
+.modo-escuro button {
+    
+    box-shadow: 0 0 5px #0cf3e7;
+    background-color: #00ffbf;
+}
+
+.modo-escuro .operador {
+    background-color: #00ff55;
+}
+
+.modo-escuro footer {
+    background-image: linear-gradient(to right, #00ffbf, #00ff55 );
+}
